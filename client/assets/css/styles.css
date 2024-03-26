@@ -1,0 +1,55 @@
+/* rgb 130, 147, 75 */
+/* rgb 239, 148, 33 */
+/* rgb 226, 237, 215 */
+/* rgb 54, 52, 50 */
+/* rgb 26, 104, 116 */
+/* rgb 247, 155, 130 */
+/* rgb 71, 197, 224 */
+#display-data {
+  row-gap: 30px;
+}
+
+.custom_card {
+  border: 1px solid #363432;
+  width: 250px;
+  height: 100%;
+}
+.custom_card img {
+  width: 249px;
+  height: 250px;
+}
+.custom_card p {
+  font-size: 16px;
+}
+.custom_card .banner {
+  color: #000000;
+  padding: 15px;
+  font-weight: bold;
+}
+.custom_card button {
+  color: #000000;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+.custom_card .card_title {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 15px;
+}
+.custom_card .card_body {
+  margin: 0;
+  padding: 15px;
+}
+.custom_card .card_link_section {
+  padding: 15px;
+}
+.custom_card .category_Natural {
+  background-color: #82934B;
+}
+.custom_card .category_Historical {
+  background-color: #EF9421;
+}
+.custom_card .category_Monument {
+  color: #FFFFFF;
+  background-color: #1A6874;
+}/*# sourceMappingURL=styles.css.map */

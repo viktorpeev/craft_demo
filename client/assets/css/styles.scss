@@ -1,0 +1,80 @@
+$black: #000000;
+$white: #FFFFFF;
+
+$asparagus: #82934B;
+/* rgb 130, 147, 75 */
+$carrot: #EF9421;
+/* rgb 239, 148, 33 */
+$chrome: #E2EDD7;
+/* rgb 226, 237, 215 */
+$dune: #363432;
+/* rgb 54, 52, 50 */
+$elm: #1A6874;
+/* rgb 26, 104, 116 */
+$geraldine: #F79B82;
+/* rgb 247, 155, 130 */
+$picton-blue: #47C5E0;
+/* rgb 71, 197, 224 */
+
+
+#display-data {
+    row-gap: 30px;
+}
+
+
+.custom_card {
+    border: 1px solid $dune;
+    width: 250px;
+    height: 100%;
+
+    img {
+        width: 249px;
+        height: 250px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .banner {
+        color: $black;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    button {
+        color: $black;
+        padding: 8px 15px;
+        font-weight: bold;
+    }
+
+    .card_title {
+        font-size: 36px;
+        font-weight: bold;
+
+        padding: 15px;
+    }
+
+    .card_body {
+        margin: 0;
+        padding: 15px
+    }
+
+    .card_link_section {
+        padding: 15px;
+    }
+
+    // styles for categories
+    .category_Natural {
+        background-color: $asparagus;
+    }
+
+    .category_Historical {
+        background-color: $carrot;
+    }
+
+    .category_Monument {
+        color: $white;
+        background-color: $elm;
+    }
+}
