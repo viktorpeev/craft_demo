@@ -9,10 +9,27 @@
   row-gap: 30px;
 }
 
+#featured {
+  background-color: #1A6874;
+  order: -1;
+}
+#featured .card_title,
+#featured .card_body {
+  color: #FFFFFF;
+}
+#featured button {
+  background-color: #E2EDD7;
+}
+#featured button:hover {
+  background-color: #47C5E0;
+}
+
 .custom_card {
   border: 1px solid #363432;
   width: 250px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .custom_card img {
   width: 249px;
@@ -24,6 +41,7 @@
 .custom_card .banner {
   color: #000000;
   padding: 15px;
+  font-size: 24px;
   font-weight: bold;
 }
 .custom_card button {
@@ -52,4 +70,31 @@
 .custom_card .category_Monument {
   color: #FFFFFF;
   background-color: #1A6874;
+}
+.custom_card button.category_Natural:hover {
+  color: #FFFFFF;
+  background-color: #1A6874;
+}
+.custom_card button.category_Historical:hover {
+  background-color: #F79B82;
+}
+.custom_card button.category_Monument:hover {
+  color: #000000;
+  background-color: #82934B;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .custom_card {
+    width: 100%;
+  }
+  .custom_card img {
+    width: 100%;
+    height: 250px;
+  }
+  .custom_card .banner {
+    font-size: 18px;
+  }
+  .custom_card .card_title {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */

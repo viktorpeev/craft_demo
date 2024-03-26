@@ -21,11 +21,30 @@ $picton-blue: #47C5E0;
     row-gap: 30px;
 }
 
+#featured {
+    background-color: $elm;
+    order: -1;
+
+    .card_title,
+    .card_body {
+        color: $white
+    }
+
+    button {
+        background-color: $chrome;
+    }
+
+    button:hover {
+        background-color: $picton-blue;
+    }
+}
 
 .custom_card {
     border: 1px solid $dune;
     width: 250px;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     img {
         width: 249px;
@@ -39,6 +58,8 @@ $picton-blue: #47C5E0;
     .banner {
         color: $black;
         padding: 15px;
+
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -76,5 +97,46 @@ $picton-blue: #47C5E0;
     .category_Monument {
         color: $white;
         background-color: $elm;
+    }
+
+
+    // hover styles for categories
+    button.category_Natural:hover{
+        color: $white;
+        background-color: $elm;
+    }
+
+    button.category_Historical:hover{
+        background-color: $geraldine;
+    }
+
+    button.category_Monument:hover{
+        color: $black;
+        background-color: $asparagus;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .custom_card {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .banner {
+            font-size: 18px;
+        }
+
+        .card_title {
+            font-size: 24px;
+        }
     }
 }
