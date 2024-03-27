@@ -1,19 +1,9 @@
+import cardButton from './components/CardButton.js'
+
+
 const api = "http://localhost:8080/cards"
 
 const display = document.querySelector("#display-data")
-
-const cardButton = (text, category, link) => {
-    const button = document.createElement('button');
-    button.textContent = text;
-    button.classList.add(`category_${category}`);
-    button.addEventListener('click', () => {
-        console.log(link);
-        window.location.href = link;
-    });
-
-    
-    return button.outerHTML;
-};
 
 
 const getData = async () => {
@@ -30,20 +20,19 @@ const displayData = async () => {
         if (!e.image) return;
 
         return `
-        <section id="${index === 1 ? `featured` : ``}" class="custom_card" >
-          
+        <section class="${index === 1 ? `active` : ``} custom_card" >
           <article>
-          <header class="banner category_${e.category}">${e.category}</header>
+          <header class="custom_card__banner custom_card__category_${e.category}">${e.category}</header>
               <figure>
                 <img src=${e.image} alt="image" />
               </figure>
-              <section class="card-profile__info">
-                <h2 class="card_title">${e.title ? e.title : 'National Park'}</h2>
-                <p class="card_body">${e.body}</p>
+              <section>
+                <h2 class="custom_card__title">${e.title ? e.title : 'National Park'}</h2>
+                <p class="custom_card__body">${e.body}</p>
               </section>
           </article>
           ${e.link ? `
-                <section class="card_link_section">
+                <section class="custom_card__link-section">
                   ${cardButton(e.linkText, e.category, e.link)}
                 </section>
               ` : ''}
