@@ -1,15 +1,9 @@
-// import cardButton from './components/CardButton.js'
+import cardButton from './components/CardButton.js'
 
 
 const api = "http://localhost:8080/cards"
 
 const display = document.querySelector("#display-data")
-
-const cardButton = (text, category, link) => {
-    return `
-      <button onclick="window.location.href = '${link}'" class="custom_card__button custom_card__category_${category}">${text}</button>
-    `;
-};
 
 
 const getData = async () => {
