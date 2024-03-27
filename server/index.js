@@ -5,11 +5,6 @@ const PORT = process.env.PORT || 8080;
 
 const path = require('path');
 
-app.listen(
-    PORT,
-    () => console.log(`works on http://localhost:${PORT}`)
-)
-
 app.use(cors());
 
 app.use(express.json());
@@ -70,3 +65,7 @@ app.get('/cards', (req, res) => {
         ]
     })
 })
+
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+module.exports = app;
